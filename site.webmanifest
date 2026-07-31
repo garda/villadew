@@ -1,0 +1,13 @@
+{
+  "name": "Villa Dew",
+  "short_name": "Villa Dew",
+  "description": "A private three-bedroom sanctuary on the green edge of Canggu, Bali.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F3EA",
+  "theme_color": "#F7F3EA",
+  "icons": [
+    { "src": "/assets/logo/icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/logo/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
