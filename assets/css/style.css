@@ -249,7 +249,7 @@ body::after{
 @media (min-width:760px){ .triad{ grid-template-columns:repeat(3,1fr) } }
 
 /* Full-bleed band */
-.band img{ width:100%; height:clamp(220px, 34vw, 420px); object-fit:cover }
+.band img{ width:100%; height:clamp(220px, 34vw, 420px); object-fit:cover; object-position:top }
 
 /* Villa */
 .villa{ background:var(--mist) }
