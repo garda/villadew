@@ -34,7 +34,7 @@
 <link rel="preload" as="image" fetchpriority="high"
       imagesrcset="assets/img/cover-facade-900.webp 900w, assets/img/cover-facade.webp 1800w"
       imagesizes="100vw" href="assets/img/cover-facade.webp">
-<link rel="stylesheet" href="assets/css/style.css?v=4">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap">
 
 <script type="application/ld+json">
@@ -86,7 +86,7 @@
     "@type": "ReserveAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://villadew.guestybookings.com/en/properties/6a3a4fd0def89a001335a612",
+      "urlTemplate": "https://villadew.hostexbooking.site",
       "actionPlatform": [
         "http://schema.org/DesktopWebPlatform",
         "http://schema.org/MobileWebPlatform"
@@ -96,7 +96,7 @@
   },
   "sameAs": [
     "https://www.instagram.com/villadew",
-    "https://villadew.guestybookings.com"
+    "https://villadew.hostexbooking.site"
   ]
 }
 </script>
@@ -116,7 +116,7 @@
     <a href="#gallery">Gallery</a>
     <a href="#location">Location</a>
   </nav>
-  <a class="btn btn--gold btn--sm" href="https://villadew.guestybookings.com/en/properties/6a3a4fd0def89a001335a612" data-book="bar">Check availability</a>
+  <a class="btn btn--gold btn--sm" href="#book" data-book="bar">Check availability</a>
 </header>
 
 <!-- ── Hero ───────────────────────────────────────────────────── -->
@@ -142,7 +142,7 @@
       Teak ceilings, a warm pool, open rice fields. Sleeps up to eight.
     </p>
     <div class="hero__cta r" style="--d:.84s">
-      <a class="btn btn--gold" href="https://villadew.guestybookings.com/en/properties/6a3a4fd0def89a001335a612" data-book="hero">Check availability</a>
+      <a class="btn btn--gold" href="#book" data-book="hero">Check availability</a>
       <a class="btn btn--ghost" href="#gallery">See the villa</a>
     </div>
   </div>
@@ -404,18 +404,46 @@
   </div>
 </section>
 
+<!-- ── Book your stay ─────────────────────────────────────────── -->
+<section class="section book" id="book">
+  <div class="wrap book__grid">
+    <div class="book__copy">
+      <p class="eyebrow">05 &nbsp;·&nbsp; Book your stay</p>
+      <h2 class="display">Pick your dates,<br>the kettle's on</h2>
+      <p class="book__sub">
+        Live availability, straight from our calendar. Choose your nights, pay securely
+        online, and your booking is confirmed on the spot — no middleman, no waiting.
+      </p>
+      <ul class="book__points">
+        <li>Real-time calendar — what you see is what's free</li>
+        <li>Secure online payment</li>
+        <li>Best rate, booked direct with us</li>
+      </ul>
+    </div>
+
+    <div class="book__widget">
+      <hostex-booking-widget listing-id="123629"
+        id="eyJob3N0X2lkIjoiMTA1NTk3Iiwid2lkZ2V0X2hvc3QiOiJodHRwczovL3cuaG9zdGV4Ym9va2luZy5zaXRlIn0="></hostex-booking-widget>
+      <noscript>
+        <p>Our booking calendar needs JavaScript — or book at
+          <a href="https://villadew.hostexbooking.site">villadew.hostexbooking.site</a>.</p>
+      </noscript>
+    </div>
+  </div>
+</section>
+<script src="https://hostex.io/app/assets/js/hostex-widget.js" type="module"></script>
+
 <!-- ── Booking CTA ────────────────────────────────────────────── -->
-<section class="cta" id="book">
+<section class="cta">
   <div class="wrap cta__inner">
     <img class="cta__logo" src="assets/logo/villadew-ivory.png" alt="Villa Dew"
          width="880" height="290" loading="lazy" decoding="async">
     <p class="cta__line">Welcome home. The kettle's on.</p>
     <p class="cta__sub">
-      Dates, rates and instant confirmation — all on our booking page.
       Any question at all, just ask; we answer as friends, not a front desk.
     </p>
-    <a class="btn btn--gold btn--lg" href="https://villadew.guestybookings.com/en/properties/6a3a4fd0def89a001335a612" data-book="footer">Check availability</a>
-    <p class="cta__meta">villadew.guestybookings.com</p>
+    <a class="btn btn--gold btn--lg" href="#book" data-book="footer">Check availability</a>
+    <p class="cta__meta"><a href="https://villadew.hostexbooking.site">villadew.hostexbooking.site</a></p>
   </div>
 </section>
 
@@ -430,7 +458,7 @@
       <a href="#villa">The villa</a>
       <a href="#gallery">Gallery</a>
       <a href="#location">Location</a>
-      <a href="https://villadew.guestybookings.com/en/properties/6a3a4fd0def89a001335a612" data-book="footnav">Book</a>
+      <a href="#book" data-book="footnav">Book</a>
     </nav>
     <p class="foot__meta">
       Canggu area (Dalung), Badung · Bali, Indonesia<br>
@@ -442,6 +470,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=4" defer></script>
+<script src="assets/js/main.js?v=5" defer></script>
 </body>
 </html>
