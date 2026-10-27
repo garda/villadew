@@ -1,7 +1,9 @@
 # Villa Dew — website
 
-A single static page whose only job is pushing clicks to
-**https://villadew.guestybookings.com**.
+A single static page selling one booking: guests pick dates and pay in the
+on-page **Hostex booking widget** (section `#book`), synced live with the
+Hostex calendar and paid via PayPal. Hosted fallback: the same inventory at
+**https://villadew.hostexbooking.site**.
 
 No build step, no framework, no dependencies. Open `index.html` and it works.
 
@@ -94,3 +96,14 @@ that span — `data-peek` is an image basename in `assets/img/` (WebP required).
    phone number added.
 4. **`geo` coordinates** are omitted from the schema rather than guessed. Adding
    real lat/long would improve local search; send them and it's a two-line edit.
+
+## Direct booking (Hostex)
+
+The `#book` section embeds Hostex's booking widget (script from hostex.io +
+`<hostex-booking-widget listing-id="123629">`). It is managed in Hostex →
+Booking Site → **"Villa Dew Website"** (self-hosted type, site id 531245):
+listing price/rules, the widget's enable switch, and the embed code all live
+there. PayPal account "Paypal Flatiro" is linked for payments. Gotchas learned
+setting it up: each step of the listing editor saves separately (change the
+price, save on that step), and the widget sells in the SITE currency (USD) —
+a price left at the property's IDR number would show as $2.5M/night.
