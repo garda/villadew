@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://villadew.com/</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://garda.github.io/villadew/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/cover-facade.jpg</image:loc></image:image>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/g-facade-sunset.jpg</image:loc></image:image>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/g-living.jpg</image:loc></image:image>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/g-terrace.jpg</image:loc></image:image>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/g-bedroom-teak.jpg</image:loc></image:image>
+    <image:image><image:loc>https://garda.github.io/villadew/assets/img/g-pool-hammock.jpg</image:loc></image:image>
   </url>
 </urlset>

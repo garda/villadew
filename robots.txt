@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://villadew.com/sitemap.xml
+# AI search and assistant crawlers: allowed, so Villa Dew can be cited in AI answers
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://garda.github.io/villadew/sitemap.xml

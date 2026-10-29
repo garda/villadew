@@ -13,7 +13,7 @@ assets/css/style.css    all styling (brand tokens at the top, as CSS variables)
 assets/js/main.js       1.4 KB — sticky bar, scroll reveals, footer year
 assets/img/             photography (webp + jpg fallback)
 assets/logo/            the three official wordmarks + favicons
-robots.txt · sitemap.xml · site.webmanifest
+robots.txt · sitemap.xml · llms.txt · site.webmanifest
 ```
 
 ## Run it locally
@@ -29,10 +29,27 @@ Then open http://localhost:4321.
 Drag the folder onto Netlify/Vercel, or push to GitHub Pages. It is plain
 static files — nothing to configure.
 
-**Before going live, search and replace `https://villadew.com/`** in
-`index.html` (canonical + Open Graph + JSON-LD), `robots.txt` and `sitemap.xml`
-with the real domain. Those are the only absolute URLs; everything else is
-relative.
+**Live URL: https://garda.github.io/villadew/** (GitHub Pages, `main` branch).
+Canonical, Open Graph, JSON-LD, `robots.txt`, `sitemap.xml` and `llms.txt` all
+use that address. `villadew.com` is NOT ours (third-party, listed for sale on
+Afternic) — never point the canonical at it. If a real custom domain is bought
+later, search-and-replace `https://garda.github.io/villadew/` in those files
+and add a `CNAME`.
+
+## SEO / AI-search setup
+
+- JSON-LD `@graph`: `WebSite` + `VacationRental` (Google's vacation-rental
+  spec: identifier, lat/long rounded to ~100 m, `containsPlace` with occupancy
+  and beds, 12 images) + `FAQPage`, which mirrors the visible `#faq` section —
+  keep the two in sync when editing answers.
+- `sameAs`: Instagram, the Airbnb listing, the Hostex booking site. Add the
+  Facebook page and Google Business Profile URL there (and in the footer)
+  once they exist.
+- `robots.txt` explicitly allows AI search crawlers; `llms.txt` is a plain
+  fact sheet for AI assistants.
+- Hostex booking site (villadew.hostexbooking.site) has its own SEO title,
+  description and keywords under Booking Site → Villa Dew → SEO & analytics,
+  and is syncing to Google Vacation Rentals.
 
 ## Brand
 
@@ -69,7 +86,7 @@ evening/lifestyle session.)
 
 `photos-in/` is source material only — it is not referenced by the page and
 should **not** be uploaded when deploying. Deploy just `index.html`,
-`assets/`, `robots.txt`, `sitemap.xml`, `site.webmanifest`.
+`assets/`, `robots.txt`, `sitemap.xml`, `llms.txt`, `site.webmanifest`.
 
 ### Hover previews ("peek")
 
@@ -94,8 +111,8 @@ that span — `data-peek` is an image basename in `assets/img/` (WebP required).
    published. The owner's mobile and the exact street address are in the intake
    form but are deliberately **not** on the page — say the word if you want the
    phone number added.
-4. **`geo` coordinates** are omitted from the schema rather than guessed. Adding
-   real lat/long would improve local search; send them and it's a two-line edit.
+4. **`geo` coordinates** come from the Hostex property record, rounded to three
+   decimals (~100 m) so the exact gate isn't published.
 
 ## Direct booking (Hostex)
 
